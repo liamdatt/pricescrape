@@ -33,7 +33,7 @@ def job():
 # Schedule time (Container TZ should be America/Jamaica)
 schedule.every().day.at("18:30").do(job)
 
-print("🚀 Scheduler started. Waiting for 18:30...", flush=True)
+print("🚀 Scheduler started. Waiting for 15:30...", flush=True)
 
 while True:
     schedule.run_pending()
