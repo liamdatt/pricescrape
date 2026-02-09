@@ -31,9 +31,9 @@ def job():
         print(f"❌ Job failed: {e}", flush=True)
 
 # Schedule time (Container TZ should be America/Jamaica)
-schedule.every().day.at("15:40").do(job)
+schedule.every().day.at("15:00").do(job)
 
-print("🚀 Scheduler started. Waiting for 15:40...", flush=True)
+print("🚀 Scheduler started. Waiting for 15:00...", flush=True)
 
 while True:
     schedule.run_pending()
